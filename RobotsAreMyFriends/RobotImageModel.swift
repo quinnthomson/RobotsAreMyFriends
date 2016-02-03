@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import AdvancedOperations
 
 class RobotImageModel: NSObject {
+    
+    let robotName:String
+    
+    init(name: String) {
+        robotName = name
+        super.init()
+        
+        RobotOperationQueue.addOperation(GetMyRobotGroupOperation(robotName: robotName))
+    }
     
 }

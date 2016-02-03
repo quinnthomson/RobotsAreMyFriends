@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let RobotCellReuseIdentifier = "RobotCell"
+
 class ViewController: UIViewController {
     
     @IBOutlet var textfield: UITextField?
@@ -21,14 +23,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func findMyBotImage() {
-        print("initiate fetch")
+        if let newName = textfield?.text {
+            let newModel = RobotImageModel(name: newName)
+            robotImages.append(newModel)
+        }
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = RobotCollectionViewCell()
-        cell.setupWithRobotImageModel(robotImages[indexPath.row])
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(RobotCellReuseIdentifier, forIndexPath: indexPath)
+        if let cell = cell as? RobotCollectionViewCell {
+            cell.setupWithRobotImageModel(robotImages[indexPath.row])
+        }
         return cell
     }
     

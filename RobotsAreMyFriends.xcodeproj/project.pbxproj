@@ -17,6 +17,9 @@
 		18644EBC1C61D51600C1D76B /* RobotImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18644EBB1C61D51600C1D76B /* RobotImageModel.swift */; };
 		18644EBE1C61D59800C1D76B /* RobotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18644EBD1C61D59800C1D76B /* RobotCollectionViewCell.swift */; };
 		18644EC01C61DA7000C1D76B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 18644EBF1C61DA7000C1D76B /* Podfile */; };
+		18644ECC1C61DC6D00C1D76B /* RobotAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18644ECB1C61DC6D00C1D76B /* RobotAPIClient.swift */; };
+		18644ED01C61DF4200C1D76B /* AdvancedOperations.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18644EC81C61DB7A00C1D76B /* AdvancedOperations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18644ED21C61E01600C1D76B /* GetMyRobotGroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18644ED11C61E01600C1D76B /* GetMyRobotGroupOperation.swift */; };
 		5CE7E6B57798D8C9F5290DDF /* Pods_RobotsAreMyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F79A26B94E325F32691207 /* Pods_RobotsAreMyFriends.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +52,27 @@
 			remoteGlobalIDString = 18D98E251C0ED1E200A059C0;
 			remoteInfo = AdvancedOperationsTests;
 		};
+		18644ECD1C61DF0400C1D76B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18644EC21C61DB7A00C1D76B /* AdvancedOperations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D98E1A1C0ED1E200A059C0;
+			remoteInfo = AdvancedOperations;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18644ECF1C61DF3300C1D76B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18644ED01C61DF4200C1D76B /* AdvancedOperations.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18644E881C61CD5800C1D76B /* RobotsAreMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotsAreMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +92,8 @@
 		18644EBD1C61D59800C1D76B /* RobotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotCollectionViewCell.swift; sourceTree = "<group>"; };
 		18644EBF1C61DA7000C1D76B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		18644EC21C61DB7A00C1D76B /* AdvancedOperations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdvancedOperations.xcodeproj; path = AdvancedOperations/AdvancedOperations.xcodeproj; sourceTree = "<group>"; };
+		18644ECB1C61DC6D00C1D76B /* RobotAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotAPIClient.swift; sourceTree = "<group>"; };
+		18644ED11C61E01600C1D76B /* GetMyRobotGroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMyRobotGroupOperation.swift; sourceTree = "<group>"; };
 		48127A5E3F982AA436E5D7D7 /* Pods-RobotsAreMyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotsAreMyFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-RobotsAreMyFriends/Pods-RobotsAreMyFriends.release.xcconfig"; sourceTree = "<group>"; };
 		56F79A26B94E325F32691207 /* Pods_RobotsAreMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobotsAreMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9511C0461786262176B05526 /* Pods-RobotsAreMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotsAreMyFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RobotsAreMyFriends/Pods-RobotsAreMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +162,9 @@
 				18644E8B1C61CD5800C1D76B /* AppDelegate.swift */,
 				18644E8D1C61CD5800C1D76B /* ViewController.swift */,
 				18644EBB1C61D51600C1D76B /* RobotImageModel.swift */,
+				18644ED11C61E01600C1D76B /* GetMyRobotGroupOperation.swift */,
 				18644EBD1C61D59800C1D76B /* RobotCollectionViewCell.swift */,
+				18644ECB1C61DC6D00C1D76B /* RobotAPIClient.swift */,
 				18644E8F1C61CD5800C1D76B /* Main.storyboard */,
 				18644E921C61CD5800C1D76B /* Assets.xcassets */,
 				18644E941C61CD5800C1D76B /* LaunchScreen.storyboard */,
@@ -194,12 +221,14 @@
 				18644E841C61CD5800C1D76B /* Sources */,
 				18644E851C61CD5800C1D76B /* Frameworks */,
 				18644E861C61CD5800C1D76B /* Resources */,
+				18644ECF1C61DF3300C1D76B /* CopyFiles */,
 				70D56A0B2B58D476C9D48BEE /* Embed Pods Frameworks */,
 				FC1614D138EBE1A8CD549194 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18644ECE1C61DF0400C1D76B /* PBXTargetDependency */,
 			);
 			name = RobotsAreMyFriends;
 			productName = RobotsAreMyFriends;
@@ -389,8 +418,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18644ECC1C61DC6D00C1D76B /* RobotAPIClient.swift in Sources */,
 				18644E8E1C61CD5800C1D76B /* ViewController.swift in Sources */,
 				18644EBC1C61D51600C1D76B /* RobotImageModel.swift in Sources */,
+				18644ED21C61E01600C1D76B /* GetMyRobotGroupOperation.swift in Sources */,
 				18644EBE1C61D59800C1D76B /* RobotCollectionViewCell.swift in Sources */,
 				18644E8C1C61CD5800C1D76B /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +455,11 @@
 			isa = PBXTargetDependency;
 			target = 18644E871C61CD5800C1D76B /* RobotsAreMyFriends */;
 			targetProxy = 18644EA81C61CD5800C1D76B /* PBXContainerItemProxy */;
+		};
+		18644ECE1C61DF0400C1D76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AdvancedOperations;
+			targetProxy = 18644ECD1C61DF0400C1D76B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
