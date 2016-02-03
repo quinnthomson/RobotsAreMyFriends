@@ -31,7 +31,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func findMyBotFriends() {
-        for newName in RobotFriends {
+        let randomFriends = RobotFriends.shuffle()
+        for newName in randomFriends {
             let newModel = RobotImageModel(name: newName)
             RobotImageStore.sharedStore.robotImages.append(newModel)
         }
