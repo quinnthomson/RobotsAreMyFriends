@@ -10,10 +10,18 @@ import UIKit
 
 class RobotCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet var imageView: UIImageView?
     var robotImageModel: RobotImageModel?
     
     func setupWithRobotImageModel(model: RobotImageModel) {
-        
+        if let robotImage = model.robotImage {
+            self.imageView?.image = robotImage
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView?.image = nil
     }
     
 }
