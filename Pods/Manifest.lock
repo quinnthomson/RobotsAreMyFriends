@@ -1,0 +1,19 @@
+PODS:
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+
+DEPENDENCIES:
+  - AFNetworking/NSURLSession (~> 2.6.3)
+  - AFNetworking/Serialization (~> 2.6.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+
+PODFILE CHECKSUM: 05a3d55113e477e83122918438d0ea784e2f2a10
+
+COCOAPODS: 1.0.0.beta.2
