@@ -9,7 +9,17 @@
 import UIKit
 import AdvancedOperations
 
-let RobotOperationQueue = OperationQueue()
+let RobotOperationQueue: OperationQueue = {
+    let queue = OperationQueue()
+//    queue.maxConcurrentOperationCount = 1
+    return queue
+}()
+
+
+
+//----------------------------------------------
+
+
 
 class GetMyRobotGroupOperation: GroupOperation {
 
@@ -27,6 +37,13 @@ class GetMyRobotGroupOperation: GroupOperation {
         addOperation(getRobotURLOperation)
     }
 }
+
+
+
+//----------------------------------------------
+
+
+
 
 extension GetMyRobotGroupOperation: OperationObserver {
     func operationDidStart(operation: Operation) {
@@ -47,6 +64,13 @@ extension GetMyRobotGroupOperation: OperationObserver {
         }
     }
 }
+
+
+
+//----------------------------------------------
+
+
+
 
 private class GetRobotURLOperation: Operation {
     
@@ -99,6 +123,13 @@ private class GetRobotURLOperation: Operation {
     }
 }
 
+
+
+//----------------------------------------------
+
+
+
+
 private class GetRobotImageOperation: Operation {
     
     let imageURL: String
@@ -126,3 +157,5 @@ private class GetRobotImageOperation: Operation {
             }.resume()
     }
 }
+
+

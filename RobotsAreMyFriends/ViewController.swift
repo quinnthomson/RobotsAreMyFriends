@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("reloadCellFromNotification:"), name: ReloadAllCellsNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.reloadCellFromNotification(_:)), name: ReloadAllCellsNotification, object: nil)
     }
     
     @IBAction func findMyBotImage() {
